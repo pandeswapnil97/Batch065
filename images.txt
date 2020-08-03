@@ -1,0 +1,4 @@
+#Making Conflicts in this file in "Branch1" branch
+x=10
+Making Conflicts in this file in "Branch1" branch
+#"Conflict occurs on this line" 
