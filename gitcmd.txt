@@ -1,25 +1,24 @@
 
-  #Create empty local repository
+  # Create empty local repository
   git init
 
-  #Configure your github account
+  # Configure your github account
   git config --global user.email "pandeswapnil97@gmail.com"
   git config --global user.name "pandeswapnil97"
   
 
-  #Check wiether github account configured or not
+  # Check wiether github account configured or not
   git config user.email
   git config user.name
 
-  #Ignore file to push (Use git ignore)
-	1)Create file
+  # Ignore file to push (Using .gitignore file)
+	1) Create file
 		$ vi .gitignore
-  	2)Inside '.gitignore'
+  	2) Inside '.gitignore'
 		Mention names of files
-	3)
-		Save the file
+	3) Save the file
 
-  #Pushing file to remote repository (master branch)
+  # Pushing file to remote repository (master branch)
   	1) Add the file
 		$ git add gitcomd.txt -f
 	2) Check Status (After every step)
@@ -35,7 +34,7 @@
 
   
 
-  #Creating new branch and pushing file to that branch
+  # Creating new branch and pushing file to that branch
   	1) Create new branch and shifting to that branch
 		$ git checkout -b Branch1
 	2) Create new branch without shifting to that branch (Addititonal Option)
@@ -52,7 +51,7 @@
 
   
 
-  #Pulling the changes made in remote repository to local repository
+  # Pulling the changes made in remote repository to local repository
   	1) Open the particular file in GitHub user interface and click on pencil present in right-hand side of screen
 	2) Edit the file as required
 	3) Select the option as Commit changes 
