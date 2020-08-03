@@ -58,3 +58,23 @@
 	4) Click on "Commit Changes"
 	5) In the git bash, shift to that master/Branch1 and perform
 		$ git pull
+
+
+	
+  # Conflicts ( When changes are made on same line on remote as well as local remote repository)
+  	For remote repository:
+  		1) Make changes to the file in remote repository
+
+	For local repository:
+		For Branch1:
+			1) Perform same steps for pushing file to remote repository
+			2) Perform git pull operation
+				$ git pull
+			3) Open the file, remove un-necessary lines, arrange required lines and save the file
+			4) Again, Perform step 1)
+
+		For master:
+			1) Switch to the master directory
+				$ git checkout -f master
+			2) Perform same steps as that of Branch1 
+			
