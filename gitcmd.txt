@@ -1,0 +1,61 @@
+
+  #Create empty local repository
+  git init
+
+  #Configure your github account
+  git config --global user.email "pandeswapnil97@gmail.com"
+  git config --global user.name "pandeswapnil97"
+  
+
+  #Check wiether github account configured or not
+  git config user.email
+  git config user.name
+
+  #Ignore file to push (Use git ignore)
+	1)Create file
+		$ vi .gitignore
+  	2)Inside '.gitignore'
+		Mention names of files
+	3)
+		Save the file
+
+  #Pushing file to remote repository (master branch)
+  	1) Add the file
+		$ git add gitcomd.txt -f
+	2) Check Status (After every step)
+		$ git status
+	3) Commit the file (Some message is necessary)
+		$ git commit -m "Enter Message"
+	4) Uncommiting the file
+		$ git rm --cached gitcomd.txt
+	5) After commiting the file, make connection with the remote repository
+		$ git remote add origin https://github.com/pandeswapnil97/CodInClub.git
+	6) Push the file to the master
+		$ git push -u origin master
+
+  
+
+  #Creating new branch and pushing file to that branch
+  	1) Create new branch and shifting to that branch
+		$ git checkout -b Branch1
+	2) Create new branch without shifting to that branch (Addititonal Option)
+		$ git branch Branch1
+	3) To switch to master 
+		$ git checkout -f master
+	4) Check whether branch is created or not
+		$ git branch
+	5) Pushing the file to Branch1 is same as that of pushing file to master (Upto Step 4)
+		For Step 6
+			$ git push -u origin Branch1
+
+
+
+  
+
+  #Pulling the changes made in remote repository to local repository
+  	1) Open the particular file in GitHub user interface and click on pencil present in right-hand side of screen
+	2) Edit the file as required
+	3) Select the option as Commit changes 
+	4) Click on "Commit Changes"
+	5) In the git bash, shift to that master/Branch1 and perform
+		$ git pull
