@@ -77,4 +77,16 @@
 			1) Switch to the master directory
 				$ git checkout -f master
 			2) Perform same steps as that of Branch1 
-			
+		
+
+
+
+    
+
+   # Merging from Branch1 to master
+   	1) Switch to "master" branch
+		$ git checkout -f master
+	2) Perform merge oprations
+		$ git merge Branch1
+	3) Perform push operation
+		$ git push -u origin master
